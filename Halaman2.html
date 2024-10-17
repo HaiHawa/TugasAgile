@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .cta-button:hover {
+            background-color: #555;
+        }
+
+        /* Section 3 Styles */
+        .section-3 {
+            padding: 40px 0;
+            background-color: #fff;
+        }
+
+        .card {
+            background-color: #f9f9f9;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: left;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        /* Responsive Media Queries */
+        @media (min-width: 768px) {
+            .card {
+                display: flex;
+                align-items: center;
+                text-align: left;
+            }
+
+            .card img {
+                width: 150px;
+                margin-right: 20px;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .section-3 .container {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .card {
+                width: 48%;
+            }
+
+            .cta-button {
+                font-size: 18px;
+                padding: 12px 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Section 3 (Desktop 3) -->
+    <section class="section-3">
+        <div class="container">
+            <h2>Kepo ya? Anda kepo kami senang! :)</h2>
+            <div class="card">
+                <img src="Ikan.png" alt="Ikan Bakar"> <!-- Sesuaikan path gambar -->
+                <p>Ikan bakar pedas manokwari adalah makanan khas Papua Barat, terutama Manokwari. Ikan bakar ini disajikan dengan sambal khas yang digiling dan biasanya disajikan mentah.</p>
+            </div>
+            <div class="card">
+                <img src="Nasi Gudeg.png" alt="Gudeg"> <!-- Sesuaikan path gambar -->
+                <p>Kota Gudeg sudah dikenal di seluruh Indonesia. Gudeg adalah masakan khas Yogyakarta yang terbuat dari nangka muda, biasanya disajikan dengan krecek, telur, dan ayam.</p>
+    </section>
+
+</body>
+</html>

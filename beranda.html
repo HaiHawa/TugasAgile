@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            height: 100vh; /* Mengisi tinggi layar */
+            overflow: hidden; /* Menyembunyikan scroll */
+        }
+
+        .container {
+            position: relative;
+            width: 100vw; /* Lebar kontainer penuh */
+            height: 100vh; /* Tinggi kontainer penuh */
+            background-color: #4b3c3a; /* Warna kontainer */
+            overflow: hidden; /* Menyembunyikan bagian gambar yang keluar */
+        }
+
+        /* Image Style */
+        .container img {
+            width: 100%; /* Gambar memenuhi lebar kontainer */
+            height: 100%; /* Gambar memenuhi tinggi kontainer */
+            object-fit: cover; /* Mempertahankan rasio aspek gambar */
+            display: block; /* Menghilangkan space di bawah gambar */
+        }
+
+        /* Overlay Content */
+        .overlay {
+            position: absolute;
+            left: 0; /* Menempatkan overlay di kiri */
+            top: 0; /* Menempatkan overlay di atas */
+            bottom: 0; /* Mengisi tinggi overlay */
+            width: 50%; /* Lebar overlay 50% dari kontainer */
+            background: rgba(0, 0, 0, 0.6); /* Warna latar belakang transparan */
+            padding: 20px;
+            display: flex; /* Menggunakan flexbox untuk pengaturan konten */
+            flex-direction: column; /* Mengatur arah konten secara vertikal */
+            justify-content: center; /* Meratakan konten secara vertikal */
+            text-align: left; /* Rata kiri */
+        }
+
+        h1 {
+            font-size: 24px; /* Ukuran font judul */
+            color: #fff; /* Warna teks judul */
+            margin-bottom: 10px; /* Margin bawah */
+        }
+
+        p {
+            font-size: 16px; /* Ukuran font paragraf */
+            color: #fff; /* Warna teks paragraf */
+            margin-bottom: 20px; /* Margin bawah */
+            line-height: 1.4; /* Jarak antar baris */
+        }
+
+        /* Button Style */
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px; /* Padding tombol */
+            background-color: #fff; /* Warna latar belakang tombol */
+            color: #333; /* Warna teks tombol */
+            text-decoration: none; /* Menghilangkan garis bawah */
+            font-weight: bold; /* Tebal */
+            border-radius: 5px; /* Sudut tombol melengkung */
+            transition: background-color 0.3s ease; /* Transisi saat hover */
+        }
+
+        .cta-button:hover {
+            background-color: #333; /* Warna latar belakang saat hover */
+            color: #fff; /* Warna teks saat hover */
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .container {
+                height: auto; /* Memungkinkan kontainer untuk menyesuaikan tinggi di perangkat kecil */
+            }
+
+            h1 {
+                font-size: 20px; /* Ukuran font judul di perangkat kecil */
+            }
+
+            p {
+                font-size: 14px; /* Ukuran font paragraf di perangkat kecil */
+            }
+
+            .cta-button {
+                padding: 8px 16px; /* Padding tombol di perangkat kecil */
+                font-size: 14px; /* Ukuran font tombol di perangkat kecil */
+            }
+        }
+    </style>
+</head>
+<body>
+
+</style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="takashi-miyazaki-XQulc3imELA-unsplash 1.png" alt="Makanan Nusantara"> 
+        <div class="overlay">
+            <h1>Selamat Datang, Sobat Pecinta Makanan Nusantara</h1>
+            <p>Makanan Khas Nusantara, menghadirkan cita rasa lezat yang bikin ketagihan, diolah dengan perasaan mendalam yang menimbulkan rasa kecintaan.</p>
+            <a href="Halaman1.html" class="cta-button">Jelajahi Sekarang</a> <!-- Mengubah onclick menjadi link langsung -->
+        </div>
+    </div>
+
+</body>
+</html>
